@@ -1,17 +1,14 @@
 .form{
     background-color: rgb(247, 242, 237);
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas: 
-        "qs qs qs qs qs bt"
-    ;
+    grid-template-columns: 1fr auto;
     grid-gap: 15px;
     border-radius: 0 0 5px 5px;
     padding: 20px;
 }
 
 .form__newElement{
-    grid-area: qs;
+
     padding: 5px;
 }
 
@@ -20,6 +17,6 @@
 }
 
 .form__button{
-    grid-area: bt;
+
     padding: 5px;
 }

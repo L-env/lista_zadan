@@ -38,8 +38,17 @@
     border: none;
 }
 
+.section__done:hover{
+    background-color: rgb(219, 219, 91);
+}
+
 .section__done--done{
     background-color: green;
+}
+
+
+.section__done--done:hover{
+    background-color: rgb(38, 160, 38);
 }
 
 .section__bin{

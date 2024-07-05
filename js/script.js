@@ -55,7 +55,7 @@
 
         for (const task of tasks) {
             htmlString += `
-                <button class="section__done js-doneButton ${task.done ? " section__done--done" : ""}"></button>
+                <button class="section__done js-doneButton ${task.done ? " section__done--done" : ""}">${task.done? "✔" : ""}</button>
                 <div class="section__task js-task${task.done ? " section__task--done" : ""}">${task.content}</div>
                 <button class="section__bin js-deleteButton">🗑️</button>
             `
@@ -77,6 +77,7 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
+        const newTaskElement = document.querySelector(".js-newElement");
         const newTaskContent = document.querySelector(".js-newElement").value.trim();
 
         if (newTaskContent === "") {
@@ -85,7 +86,9 @@
 
         addNewTask(newTaskContent);
 
-        document.querySelector(".js-newElement").value = "";
+        newTaskElement.value = "";
+
+        newTaskElement.focus();
     };
 
     const init = () => {

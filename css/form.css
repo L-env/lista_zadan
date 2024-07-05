@@ -7,8 +7,18 @@
     padding: 20px;
 }
 
-.form__newElement{
+@media(max-width: 767px){
+    .form{
+        background-color: rgb(247, 242, 237);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        border-radius: 0 0 5px 5px;
+        padding: 20px;
+    }
+}
 
+.form__newElement{
     padding: 5px;
 }
 
@@ -17,6 +27,5 @@
 }
 
 .form__button{
-
     padding: 5px;
 }

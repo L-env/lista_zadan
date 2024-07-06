@@ -29,26 +29,7 @@
             });
         });
     };
-
-    const addBlackBorder = () => {
-        const submitButton = document.querySelector(".js-submitForm");
-        const newElement = document.querySelector(".js-newElement");
-
-        submitButton.addEventListener("click", () => {
-            newElement.style.border = "2px solid black";
-        });
-    };
-
-    const addNormalBorder = () => {
-        const submitButton = document.querySelector(".js-submitForm");
-        const newElement = document.querySelector(".js-newElement");
-
-        submitButton.addEventListener("click", () => {
-            newElement.style.border = "2px solid grey";
-        });
-    };
-
-
+    
     const render = () => {
         const listElement = document.querySelector(".js-tasks");
         let htmlString = "";

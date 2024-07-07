@@ -1,15 +1,15 @@
-.section{
+.section {
     box-shadow: 0 0 5px #ddd;
 }
 
-.section__header{
+.section__header {
     background-color: rgb(247, 242, 237);
     border-radius: 5px 5px 0 0;
     padding: 20px;
     margin: 20px 0 2px 0;
 }
 
-.section__body{
+.section__body {
     background-color: rgb(247, 242, 237);
     min-height: 50px;
     display: grid;
@@ -19,16 +19,17 @@
     padding: 20px;
 }
 
-.section__task{
+.section__task {
     height: 35px;
     display: flex;
     align-items: center;
 }
-.section__task--done{
+
+.section__task--done {
     text-decoration: line-through;
 }
 
-.section__done{
+.section__done {
     background-color: rgb(235, 235, 38);
     width: 30px;
     height: 30px;
@@ -38,20 +39,20 @@
     border: none;
 }
 
-.section__done:hover{
+.section__done:hover {
     background-color: rgb(219, 219, 91);
 }
 
-.section__done--done{
+.section__done--done {
     background-color: green;
 }
 
 
-.section__done--done:hover{
+.section__done--done:hover {
     background-color: rgb(38, 160, 38);
 }
 
-.section__bin{
+.section__bin {
     background-color: crimson;
     width: 30px;
     height: 30px;

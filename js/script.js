@@ -29,14 +29,14 @@
             });
         });
     };
-    
+
     const render = () => {
         const listElement = document.querySelector(".js-tasks");
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
-                <button class="section__done js-doneButton ${task.done ? " section__done--done" : ""}">${task.done? "✔" : ""}</button>
+                <button class="section__done js-doneButton ${task.done ? " section__done--done" : ""}">${task.done ? "✔" : ""}</button>
                 <div class="section__task js-task${task.done ? " section__task--done" : ""}">${task.content}</div>
                 <button class="section__bin js-deleteButton">🗑️</button>
             `

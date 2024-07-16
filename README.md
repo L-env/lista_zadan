@@ -1,2 +1,4 @@
-#Lista zadań
-##Strona dzięki której możemy spisać zadania do wykonania
+# Lista zadań
+Możemy dzięki niej spisać zadania do wykonania
+## Demo
+https://l-env.github.io/lista_zadan/
